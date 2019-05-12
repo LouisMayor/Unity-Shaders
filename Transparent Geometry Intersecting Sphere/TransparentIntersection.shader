@@ -69,7 +69,7 @@ Shader "Unlit/TransparentIntersection"
 			fixed4 frag (v2f i) : SV_Target
 			{
 				float sampleSceneDepth = DecodeFloatRG(tex2D( _CameraDepthNormalsTexture, i.screenUV).zw);
-			    float depthDiff = sampleSceneDepth - i.vertexDepth;
+				float depthDiff = sampleSceneDepth - i.vertexDepth;
 
 				float intersect = step( depthDiff, 0.0f );
 				float intersection = lerp( 1.0f - smoothstep( 0.0f, _ProjectionParams.w * 0.5f, depthDiff ), 0.0f, intersect );
