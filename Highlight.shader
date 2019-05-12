@@ -1,4 +1,6 @@
-﻿Shader "Unlit/Highlight"
+﻿// Source: https://www.febucci.com/2019/04/pickable-objects-shader/
+
+Shader "Unlit/Highlight"
 {
 	Properties
 	{

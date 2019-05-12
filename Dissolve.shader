@@ -1,4 +1,6 @@
-﻿Shader "Unlit/Dissolve"
+﻿// Source: https://www.febucci.com/2018/09/dissolve-shader/
+
+Shader "Unlit/Dissolve"
 {
 	Properties
 	{
